@@ -1,19 +1,24 @@
 // function snippets
 
-var clicks = 0;
+var clicks1 = 0;
+var clicks2 = 0;
 
 // jquery
-$('#my-elem').click(function(e) {
+$('#cat-1').click(function(e) {
   //the element has been clicked... do stuff here
-  clicks++;
-  console.log("Clicks: " + clicks);
-  $('.score').text("Clicks: " + clicks);
+  clicks1++;
+  $('.clicks-1').text("Clicks: " + clicks1);
 });
 
+$('#cat-2').click(function(e) {
+  //the element has been clicked... do stuff here
+  clicks2++;
+  $('.clicks-2').text("Clicks: " + clicks2);
+});
 
+// pure js
 var elem = document.getElementById('my-elem');
 
-// pure javascript
 elem.addEventListener('click', function(){
   //the element has been clicked... do stuff here
 }, false);
