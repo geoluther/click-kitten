@@ -13,6 +13,7 @@ $('#cat-1').click(function(e) {
 $('#cat-2').click(function(e) {
   //the element has been clicked... do stuff here
   clicks2++;
+  console.log("clicked cat 2")
   $('.clicks-2').text("Clicks: " + clicks2);
 });
 

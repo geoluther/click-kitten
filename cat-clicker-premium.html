@@ -17,41 +17,58 @@
 </head>
 <body>
 
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-            <![endif]-->
+    <div class="container">
+        <div class="row">
 
-            <!-- Add your site or application content here -->
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-md-12">
-                    <h3 class="bg-info text-center">Click The Kitties!</h3>
-                    </div>
-
-                </div>
-
-                <div class="row">
-                    <div class="col-sm-6">
-                        <img class="img-responsive" id="cat-1" src="img/cat400.jpeg" alt="responsive image">
-                        <h2 class="bg-info clicks-1 text-center">Clicks: 0</h2>
-                    </div>
-
-                    <div class="col-sm-6">
-                        <img class="img-responsive" id="cat-2" src="img/cat400.jpeg" alt="responsive image">
-                        <h2 class="bg-info clicks-2 text-center">Clicks: 0</h2>
-                    </div>
-
-                </div>
-
+            <div class="col-md-12">
+                <h3 class="bg-info text-center">Click The Kitties!</h3>
             </div>
 
-            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-            <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-            <script src="js/plugins.js"></script>
-            <script src="js/main.js"></script>
-            <script src="js/js-snippets.js"></script>
+        </div>
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Pick a Kitten!</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav kittens">
+                    </ul>
+
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div id="picked-cat">
+                    <h3>Choose Cat To Click</h3>
+                </div>
+            </div>
+
+            <div class="col-sm-3">
+                <h2 id="picked-clicks" class="bg-info text-center"></h2>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
 
-        </body>
-        </html>
+</body>
+</html>
