@@ -17,8 +17,8 @@ $('#cat-2').click(function(e) {
 });
 
 // pure js
-var elem = document.getElementById('my-elem');
+// var elem = document.getElementById('my-elem');
 
-elem.addEventListener('click', function(){
-  //the element has been clicked... do stuff here
-}, false);
+// elem.addEventListener('click', function(){
+//   //the element has been clicked... do stuff here
+// }, false);
