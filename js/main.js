@@ -53,11 +53,11 @@ function BuildMenu() {
 	}
 };
 
-var kitten1 = new Cat('Kitty 0', 'img/cat-1.jpeg');
-var kitten2 = new Cat('Kitty 1', 'img/cat-2.jpg');
-var kitten3 = new Cat('Kitty 2', 'img/cat-3.jpg');
-var kitten4 = new Cat('Kitty 3', 'img/cat-4.jpg');
-var kitten5 = new Cat('Kitty 4', 'img/cat-5.jpg');
+var kitten1 = new Cat('Lancelot', 'img/cat-1.jpeg');
+var kitten2 = new Cat('Gemini', 'img/cat-2.jpg');
+var kitten3 = new Cat('Zeus', 'img/cat-3.jpg');
+var kitten4 = new Cat('The Pleades', 'img/cat-4.jpg');
+var kitten5 = new Cat('Clyde', 'img/cat-5.jpg');
 
 var kittens = [kitten1, kitten2, kitten3, kitten4, kitten5];
 
@@ -71,6 +71,7 @@ $(".cat-link").click( function() {
 	'" src="./' + kittens[index].image + '" alt="responsive image">';
 
 	$('#picked-cat').html(catHTML);
+	$('#cat-name').text(kittens[index].name);
 	$('#picked-clicks').text("Clicks: " + kittens[index].clicks);
 
 });
