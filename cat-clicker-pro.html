@@ -1,0 +1,102 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Cat Clicker Premium Pro</title>
+	<meta name="description" content="click the cat">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<!-- Place favicon.ico in the root directory -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main-mvc.css">
+	<script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12">
+				<h3 class="bg-info text-center">Click The Kitties!</h3>
+			</div>
+
+		</div>
+
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Pick a Kitten!</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav kittens">
+					</ul>
+
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+
+		<div class="row">
+			<div class="col-sm-6">
+				<div id="picked-cat">
+					<h3>Choose A Cat Above</h3>
+				</div>
+			</div>
+
+			<div class="col-sm-4">
+				<h2 id="cat-name"></h2>
+				<h2 id="picked-clicks" class="bg-info text-center"></h2>
+			</div>
+
+		</div>
+
+<br>
+		<div class="row admin-area">
+			<div class="col-sm-2">
+				<button type="button" id="admin-button" class="btn btn-default">Admin</button>
+			</div>
+
+			<div class="col-sm-5">
+				<h3>Add a New Cat</h3>
+				<form>
+					<div class="form-group">
+					<label for="exampeInputCat">Cat's Name</label>
+						<input type="text" class="form-control" id="exampleInputCat" placeholder="Cat's Name">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputUrl">URL</label>
+						<input type="text" class="form-control" id="exampleInputUrl" placeholder="URL">
+					</div>
+					<div class="form-group">
+						<label for="exampleInputClicks">Number of Clicks</label>
+						<input type="text" id="exampleInputClicks">
+					</div>
+
+					<button type="submit" class="btn btn-default">Submit</button>
+					<button type="cancel" class="btn btn-default">Cancel</button>
+				</form>
+			</div>
+		</div>
+		<br>
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+	<script src="js/main.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
