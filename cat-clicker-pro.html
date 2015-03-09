@@ -49,29 +49,28 @@
 		</nav>
 
 		<div class="row">
+
 			<div class="col-sm-6">
 				<div id="picked-cat">
 				<h3>Choose A Cat Above</h3>
 				</div>
-				<h2 id="cat-name"></h2>
-				<h2 id="picked-clicks" class="bg-info text-center"></h2>
+
+				<div class="row">
+					<div class="col-sm-4">
+					<h3 id="cat-name"></h3>
+					</div>
+					<div class="col-sm-4">
+					<h3 id="picked-clicks"></h3>
+					</div>
+				</div>
 			</div>
+
 
 			<div class="col-sm-4">
-
-			</div>
-
-		</div>
-
-<br>
-		<div class="row">
-			<div class="col-sm-2">
 				<button type="button" id="admin-button" class="btn btn-default">Admin</button>
-			</div>
 
-			<div class="col-sm-5" id="admin-form">
+			<div id="admin-form">
 				<h3>Add a New Cat</h3>
-				<form>
 					<div class="form-group">
 					<label for="exampeInputCat">Cat's Name</label>
 						<input type="text" class="form-control" id="exampleInputCat" placeholder="Cat's Name">
@@ -89,8 +88,9 @@
 					<button type="cancel" class="btn btn-default">Cancel</button>
 				</form>
 			</div>
+			</div>
 		</div>
-		<br>
+
 	</div>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

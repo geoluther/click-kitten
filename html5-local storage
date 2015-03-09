@@ -1,0 +1,20 @@
+http://stackoverflow.com/questions/17087636/how-to-save-data-from-a-form-with-html5-local-storage
+
+
+html 5 local storage:
+
+var inputEmail= document.getElementById("email");
+localStorage.setItem("email", inputEmail.value);
+When you want to get the value, you can do the following:
+
+var storedValue = localStorage.getItem("email");
+It is also possible to store the values on button click, like so:
+
+<button onclick="store()" type="button">StoreEmail</button>
+
+<script  type="text/javascript">
+  function store(){
+     var inputEmail= document.getElementById("email");
+     localStorage.setItem("email", inputEmail.value);
+    }
+</script>

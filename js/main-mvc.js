@@ -59,11 +59,9 @@ function BuildMenu() {
 };
 
 var view = {
-
 	init: function() {
 		octopus.drawCats()
 	},
-
 
 };
 
