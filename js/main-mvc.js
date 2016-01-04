@@ -8,6 +8,12 @@ var Cat = function (name, imgPath) {
 	this.name = name;
 };
 
+
+// is this octopus or model
+Cat.prototype.increment = function() {
+	this.clicks += 1;
+}
+
 var kitten1 = new Cat('Lancelot', 'img/cat-1.jpeg');
 var kitten2 = new Cat('Gemini', 'img/cat-2.jpg');
 var kitten3 = new Cat('Zeus', 'img/cat-3.jpg');
@@ -22,7 +28,7 @@ var kittens = [kitten1, kitten2, kitten3, kitten4, kitten5];
 
 var octopus = {
 	increment: function() {
-		currentCat.incremen();
+		currentCat.increment();
 	}
 };
 
@@ -42,14 +48,7 @@ $('#picked-cat').click(function() {
 
 
 
-// is this octopus or model
-Cat.prototype.increment = function() {
-	this.clicks += 1;
-}
-
-
 // controller - good.
-
 function BuildMenu() {
 	for (var i = 0; i < kittens.length; i++) {
 		var name = kittens[i].name;
@@ -58,10 +57,15 @@ function BuildMenu() {
 	}
 };
 
+
+// view
+
 var view = {
 	init: function() {
 		octopus.drawCats()
 	},
+
+
 
 };
 
